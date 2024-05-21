@@ -37,10 +37,10 @@
 
             display-name = "Bilang";
             bindings = <
-&kp TAB                  &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT         &bt BT_SEL 0       &kp MINUS     &kp N7        &kp N8         &kp N9        &trans      &trans
-&mt LEFT_CONTROL ESCAPE  &kp C_MUTE  &kp C_PREVIOUS  &kp C_NEXT  &kp C_PP           &tog 4             &kp ASTERISK  &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp PLUS    &trans
-&kp LSHFT                &trans      &kp LA(F4)      &trans      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp SLASH     &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp PERIOD  &trans
-                                                     &kp LGUI    &trans             &lt 3 SPACE        &kp RET       &kp N0        &kp BACKSPACE
+&lt 4 TAB                &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_PRV         &bt BT_NXT       &bt BT_SEL 0    &kp MINUS     &kp N7        &kp N8         &kp N9        &trans      &trans
+&mt LEFT_CONTROL ESCAPE  &kp C_MUTE  &kp C_PREVIOUS  &kp C_NEXT         &kp C_PP         &trans          &kp ASTERISK  &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp PLUS    &trans
+&kp LSHFT                &trans      &trans          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans          &kp SLASH     &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp PERIOD  &trans
+                                                     &kp LGUI           &trans           &lt 3 SPACE     &kp RET       &kp N0        &kp BACKSPACE
             >;
         };
 
@@ -62,20 +62,24 @@
 
         layer_navigation {
             bindings = <
-&kp TAB                  &trans             &trans              &trans            &kp LA(LS(R))  &kp LC(LA(LS(C)))        &kp HOME         &kp END           &kp PG_UP          &kp PG_DN    &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
-&mt LEFT_CONTROL ESCAPE  &trans             &kp LA(LEFT_SHIFT)  &kp LC(LEFT_ALT)  &kp LEFT_ALT   &kp LC(LA(LS(SPACE)))    &kp LEFT         &kp DOWN          &kp UP             &kp RIGHT    &kp LC(LA(TAB))    &trans
-&kp LSHFT                &kp LC(LA(LS(Z)))  &kp LA(LS(F))       &kp LA(LS(Z))     &kp LA(LS(M))  &kp LA(SPACE)            &kp LC(LS(TAB))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(TAB)  &trans             &trans
-                                                                &trans            &trans         &trans                   &kp ENTER        &trans            &kp BSPC
+&kp TAB                  &trans  &trans  &trans             &trans                 &kp LC(LA(TAB))    &kp HOME         &kp END           &kp PG_UP          &kp PG_DN    &kp LC(LA(LS(P)))  &trans
+&mt LEFT_CONTROL ESCAPE  &trans  &trans  &kp LC(LA(LS(D)))  &kp LC(LA(LS(SPACE)))  &kp LA(SPACE)      &kp LEFT         &kp DOWN          &kp UP             &kp RIGHT    &trans             &trans
+&kp LSHFT                &trans  &trans  &trans             &trans                 &trans             &kp LC(LS(TAB))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(TAB)  &trans             &trans
+                                         &trans             &trans                 &trans             &kp ENTER        &trans            &kp BSPC
             >;
+
+            label = "Libut";
         };
 
-        layer_solidworks {
+        layer_komorebi {
             bindings = <
-&trans  &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(N6)  &kp S       &kp LC(N7)  &trans      &tog 4        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans      &trans      &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &kp LG(LS(UP_ARROW))  &kp LA(LS(R))  &trans    &kp LC(LA(LEFT))    &kp LC(LA(DOWN))  &kp LC(LA(UP_ARROW))  &kp LC(LA(RIGHT))  &trans  &trans
+&trans  &trans  &trans  &kp LG(LS(DOWN))      &kp LA(LS(F))  &trans    &kp LA(LEFT_ARROW)  &kp LA(DOWN)      &kp LA(UP_ARROW)      &kp LA(RIGHT)      &trans  &trans
+&trans  &trans  &trans  &trans                &trans         &trans    &kp LA(LS(LEFT))    &kp LA(END)       &kp LA(HOME)          &kp LA(LS(RIGHT))  &trans  &trans
+                        &trans                &trans         &trans    &trans              &trans            &trans
             >;
+
+            label = "Aguman";
         };
     };
 };
