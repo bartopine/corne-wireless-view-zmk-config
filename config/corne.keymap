@@ -92,7 +92,7 @@
         layer_navigation {
             bindings = <
 &kp TAB                  &trans  &trans      &kp LS(LA(LC(SPACE)))  &kp F2  &kp LC(LA(TAB))    &kp HOME         &kp END           &kp PG_UP          &kp PG_DN    &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
-&mt LEFT_CONTROL ESCAPE  &trans  &trans      &kt DEL                &mo 5   &kp LA(SPACE)      &kp LEFT         &kp DOWN          &kp UP             &kp RIGHT    &kp LA(ESCAPE)     &trans
+&mt LEFT_CONTROL ESCAPE  &trans  &kp LGUI    &kt DEL                &mo 5   &kp LA(SPACE)      &kp LEFT         &kp DOWN          &kp UP             &kp RIGHT    &kp LA(ESCAPE)     &trans
 &kp LSHFT                &trans  &kp LA(F4)  &kp LC(LS(LA(C)))      &trans  &trans             &kp LC(LS(TAB))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(TAB)  &trans             &trans
                                              &trans                 &trans  &trans             &kp ENTER        &kp LEFT_ALT      &kp BSPC
             >;
