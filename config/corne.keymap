@@ -16,23 +16,23 @@
         tab_forward {
             bindings = <&kp LC(TAB)>;
             key-positions = <20 21>;
-            layers = <3 5>;
+            layers = <3 5 0>;
         };
 
         tab_backward {
             bindings = <&kp LC(LS(TAB))>;
-            key-positions = <18 19>;
-            layers = <3 5>;
+            key-positions = <19 20>;
+            layers = <3 5 0>;
         };
 
         mute_general {
-            bindings = <&kp K_MUTE>;
+            bindings = <&kp C_MUTE>;
             key-positions = <31 30>;
             layers = <0>;
         };
 
         mute_alternative {
-            bindings = <&kp K_MUTE>;
+            bindings = <&kp C_MUTE>;
             key-positions = <29 28>;
             layers = <0>;
         };
@@ -91,10 +91,10 @@
 
         layer_navigation {
             bindings = <
-&kp TAB                  &trans  &trans      &kp LS(LA(LC(SPACE)))  &kp F2  &kp LC(LA(TAB))    &kp HOME         &kp END           &kp PG_UP          &kp PG_DN    &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
-&mt LEFT_CONTROL ESCAPE  &trans  &kp LGUI    &kt DEL                &mo 5   &kp LA(SPACE)      &kp LEFT         &kp DOWN          &kp UP             &kp RIGHT    &kp LA(ESCAPE)     &trans
-&kp LSHFT                &trans  &kp LA(F4)  &kp LC(LS(LA(C)))      &trans  &trans             &kp LC(LS(TAB))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(TAB)  &trans             &trans
-                                             &trans                 &trans  &trans             &kp ENTER        &kp LEFT_ALT      &kp BSPC
+&kp TAB                  &trans  &trans      &kp LG(E)          &kp F2                 &kp LC(LA(TAB))    &kp HOME                &kp END                 &kp PG_UP           &kp PG_DN          &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
+&mt LEFT_CONTROL ESCAPE  &trans  &kp LGUI    &kt DEL            &kp LC(LA(LS(SPACE)))  &kp LA(SPACE)      &kp LEFT                &kp DOWN                &kp UP              &kp RIGHT          &kp LA(ESCAPE)     &trans
+&kp LSHFT                &trans  &kp LA(F4)  &kp LC(LS(LA(C)))  &trans                 &trans             &kp LC(LG(LEFT_ARROW))  &kp C_AL_PREVIOUS_TASK  &kp C_AL_NEXT_TASK  &kp LC(LG(RIGHT))  &trans             &trans
+                                             &trans             &trans                 &trans             &mo 5                   &kp LEFT_ALT            &kp BSPC
             >;
 
             label = "Libut";
@@ -112,10 +112,10 @@
 
         layer_komorebi {
             bindings = <
-&trans      &trans  &trans  &trans  &kp LA(LS(R))  &trans    &kp LC(LA(LEFT))    &kp LC(LA(DOWN))  &kp LC(LA(UP_ARROW))  &kp LC(LA(RIGHT))  &trans         &kp LA(LS(RIGHT))
-&kp ESCAPE  &trans  &trans  &trans  &trans         &trans    &kp LA(LEFT_ARROW)  &kp LA(DOWN)      &kp LA(UP_ARROW)      &kp LA(RIGHT)      &kp LA(LS(F))  &kp LA(LS(LEFT))
-&trans      &trans  &trans  &trans  &trans         &trans    &trans              &kp LA(END)       &kp LA(HOME)          &trans             &trans         &trans
-                            &trans  &trans         &trans    &trans              &trans            &trans
+&trans  &trans  &trans  &trans  &kp LA(LS(R))  &trans    &kp LC(LA(LEFT))    &kp LC(LA(DOWN))  &kp LC(LA(UP_ARROW))  &kp LC(LA(RIGHT))  &trans         &kp LA(LS(RIGHT))
+&trans  &trans  &trans  &trans  &trans         &trans    &kp LA(LEFT_ARROW)  &kp LA(DOWN)      &kp LA(UP_ARROW)      &kp LA(RIGHT)      &kp LA(LS(F))  &kp LA(LS(LEFT))
+&trans  &trans  &trans  &trans  &trans         &trans    &trans              &kp LA(END)       &kp LA(HOME)          &trans             &trans         &trans
+                        &trans  &trans         &trans    &trans              &trans            &trans
             >;
 
             label = "Aguman";
