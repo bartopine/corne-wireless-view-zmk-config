@@ -24,18 +24,6 @@
             key-positions = <19 20>;
             layers = <3 5 0>;
         };
-
-        mute_general {
-            bindings = <&kp C_MUTE>;
-            key-positions = <31 30>;
-            layers = <0>;
-        };
-
-        mute_alternative {
-            bindings = <&kp C_MUTE>;
-            key-positions = <29 28>;
-            layers = <0>;
-        };
     };
 
     keymap {
@@ -91,7 +79,7 @@
 
         layer_navigation {
             bindings = <
-&kp TAB                  &trans  &trans      &kp LG(E)          &kp F2                 &kp LC(LA(TAB))    &kp HOME                &kp END                 &kp PG_UP           &kp PG_DN          &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
+&kp TAB                  &trans  &kp LC(W)   &kp LG(E)          &kp F2                 &kp LC(LA(TAB))    &kp HOME                &kp END                 &kp PG_UP           &kp PG_DN          &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
 &mt LEFT_CONTROL ESCAPE  &trans  &kp LGUI    &kt DEL            &kp LC(LA(LS(SPACE)))  &kp LA(SPACE)      &kp LEFT                &kp DOWN                &kp UP              &kp RIGHT          &kp LA(ESCAPE)     &trans
 &kp LSHFT                &trans  &kp LA(F4)  &kp LC(LS(LA(C)))  &trans                 &trans             &kp LC(LG(LEFT_ARROW))  &kp C_AL_PREVIOUS_TASK  &kp C_AL_NEXT_TASK  &kp LC(LG(RIGHT))  &trans             &trans
                                              &trans             &trans                 &trans             &mo 5                   &kp LEFT_ALT            &kp BSPC
