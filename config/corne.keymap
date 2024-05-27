@@ -15,13 +15,43 @@
         tab_forward {
             bindings = <&kp LC(TAB)>;
             key-positions = <20 21>;
-            layers = <3 5 0>;
+            layers = <0>;
         };
 
         tab_backward {
             bindings = <&kp LC(LS(TAB))>;
             key-positions = <19 20>;
-            layers = <3 5 0>;
+            layers = <0>;
+        };
+
+        komorebi_focus_left {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <19 20>;
+            layers = <3>;
+        };
+
+        komorebi_focus_right {
+            bindings = <&kp LA(RIGHT)>;
+            key-positions = <20 21>;
+            layers = <3>;
+        };
+
+        komorebi_shift_left {
+            bindings = <&kp LC(LA(LEFT))>;
+            key-positions = <7 8>;
+            layers = <3>;
+        };
+
+        komorebi_shift_right {
+            bindings = <&kp LC(LA(RIGHT))>;
+            key-positions = <8 9>;
+            layers = <3>;
+        };
+
+        komorebi_workspace {
+            bindings = <&kp LA(HOME)>;
+            key-positions = <31 32>;
+            layers = <3>;
         };
     };
 
