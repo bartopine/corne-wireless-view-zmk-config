@@ -124,10 +124,10 @@
 
         navigation {
             bindings = <
-&kp LEFT_SHIFT           &trans     &kp LC(W)   &kp LG(E)          &kp F2                 &kp LC(LA(TAB))    &kp HOME  &kp END           &kp PG_UP          &kp PG_DN  &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
-&mt LEFT_CONTROL ESCAPE  &kp LC(A)  &kp LGUI    &kp DELETE         &kp LC(LA(LS(SPACE)))  &kp LA(SPACE)      &kp LEFT  &kp DOWN          &kp UP             &kp RIGHT  &kp LA(ESCAPE)     &kp LC(LA(LS(Z)))
-&kp LEFT_ALT             &trans     &kp LA(F4)  &kp LC(LS(LA(C)))  &mo 6                  &mo 7              &trans    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans     &trans             &trans
-                                                &trans             &trans                 &trans             &mo 7     &kp BACKSPACE     &trans
+&kp LEFT_SHIFT           &trans     &kp LC(W)   &kp LG(E)          &kp F2                 &kp LC(LA(TAB))    &kp LC(Y)  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans     &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
+&mt LEFT_CONTROL ESCAPE  &kp LC(A)  &kp LGUI    &kp DELETE         &kp LC(LA(LS(SPACE)))  &kp LA(SPACE)      &kp LEFT   &kp DOWN                &kp UP                   &kp RIGHT  &kp LA(ESCAPE)     &kp LC(LA(LS(Z)))
+&kp LEFT_ALT             &kp LC(Z)  &kp LA(F4)  &kp LC(LS(LA(C)))  &mo 6                  &mo 7              &kp HOME   &kp PAGE_UP             &kp PAGE_DOWN            &kp END    &trans             &trans
+                                                &trans             &trans                 &trans             &mo 7      &kp BACKSPACE           &trans
             >;
 
             label = "Libut";
