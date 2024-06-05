@@ -59,6 +59,12 @@
             key-positions = <27 28>;
             layers = <0>;
         };
+
+        NumbersLayer {
+            bindings = <&mo 1>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -73,10 +79,10 @@
 
             display-name = "Amanu";
             bindings = <
-&lt 5 TAB                &kp Q  &kp W  &kp E  &kp R           &kp T          &kp Y    &kp U          &kp I      &kp O    &kp P     &kp LEFT_ALT
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D  &kp F           &kp G          &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_ALT             &kp Z  &kp X  &kp C  &kp V           &kp B          &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_GUI
-                                       &mo 1  &kp LEFT_SHIFT  &lt 4 SPACE    &kp RET  &kp BACKSPACE  &mo 2
+&lt 5 TAB     &kp Q  &kp W  &kp E  &kp R      &kp T                   &kp Y    &kp U          &kp I      &kp O    &kp P     &kp LEFT_ALT
+&lt 4 ESCAPE  &kp A  &kp S  &kp D  &kp F      &kp G                   &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C  &kp V      &kp B                   &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_GUI
+                            &mo 1  &kp LCTRL  &mt LEFT_SHIFT SPACE    &kp RET  &kp BACKSPACE  &mo 2
             >;
         };
 
@@ -89,10 +95,10 @@
 
             display-name = "Bilang";
             bindings = <
-&kp LEFT_SHIFT           &kp N1  &kp N2  &kp N3  &kp N4      &kp N5    &kp MINUS     &kp N7         &kp N8        &kp N9        &kp MINUS   &kp EQUAL
-&mt LEFT_CONTROL ESCAPE  &kp N6  &kp N7  &kp N8  &kp N9      &kp N0    &kp ASTERISK  &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp PLUS    &trans
-&kp LEFT_ALT             &trans  &trans  &trans  &kp PERIOD  &trans    &kp SLASH     &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &trans
-                                         &trans  &trans      &trans    &kp NUMBER_0  &kp BACKSPACE  &trans
+&kp N1   &kp N2   &kp N3  &kp N4  &trans  &trans       &kp MINUS     &kp N7        &kp N8        &kp N9        &kp MINUS   &kp EQUAL
+&kp N5   &kp N6   &kp N7  &kp N8  &trans  &trans       &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS    &trans
+&kp RET  &kp DOT  &kp N9  &kp N0  &trans  &trans       &kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &trans
+                          &trans  &trans  &kp LSHFT    &kp NUMBER_0  &trans        &trans
             >;
         };
 
