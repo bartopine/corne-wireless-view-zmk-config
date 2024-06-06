@@ -15,53 +15,65 @@
         tab_forward {
             bindings = <&kp LC(TAB)>;
             key-positions = <20 21>;
-            layers = <0>;
+            layers = <5>;
         };
 
         tab_backward {
             bindings = <&kp LC(LS(TAB))>;
             key-positions = <19 20>;
-            layers = <0>;
+            layers = <5>;
         };
 
         komorebi_focus_left {
             bindings = <&kp LA(LEFT_ARROW)>;
-            key-positions = <19 20>;
-            layers = <4>;
+            key-positions = <38 18>;
+            layers = <5>;
         };
 
         komorebi_focus_right {
             bindings = <&kp LA(RIGHT)>;
-            key-positions = <20 21>;
-            layers = <4>;
+            key-positions = <21 38>;
+            layers = <5>;
         };
 
         komorebi_shift_left {
             bindings = <&kp LC(LA(LEFT))>;
-            key-positions = <7 8>;
-            layers = <4>;
+            key-positions = <38 30>;
+            layers = <5>;
         };
 
         komorebi_shift_right {
             bindings = <&kp LC(LA(RIGHT))>;
-            key-positions = <8 9>;
-            layers = <4>;
+            key-positions = <38 33>;
+            layers = <5>;
         };
 
-        komorebi_workspace {
-            bindings = <&kp LA(HOME)>;
-            key-positions = <31 32>;
-            layers = <4>;
+        komorebi_focus_up {
+            bindings = <&kp LA(UP_ARROW)>;
+            key-positions = <38 20>;
+            layers = <5>;
         };
 
-        mute {
-            bindings = <&kp C_MUTE>;
-            key-positions = <27 28>;
-            layers = <0>;
+        komorebi_focus_down {
+            bindings = <&kp LA(DOWN)>;
+            key-positions = <38 19>;
+            layers = <5>;
         };
 
-        NumbersLayer {
-            bindings = <&mo 1>;
+        komrebi_shift_up {
+            bindings = <&kp LC(LA(UP_ARROW))>;
+            key-positions = <38 32>;
+            layers = <5>;
+        };
+
+        komorebi_shift_down {
+            bindings = <&kp LC(LA(DOWN_ARROW))>;
+            key-positions = <38 31>;
+            layers = <5>;
+        };
+
+        numbers {
+            bindings = <&mo 2>;
             key-positions = <15 16>;
             layers = <0>;
         };
@@ -79,10 +91,20 @@
 
             display-name = "Amanu";
             bindings = <
-&lt 5 TAB     &kp Q  &kp W  &kp E  &kp R      &kp T                   &kp Y    &kp U          &kp I      &kp O    &kp P     &kp LEFT_ALT
-&lt 4 ESCAPE  &kp A  &kp S  &kp D  &kp F      &kp G                   &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_ALT  &kp Z  &kp X  &kp C  &kp V      &kp B                   &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_GUI
-                            &mo 1  &kp LCTRL  &mt LEFT_SHIFT SPACE    &kp RET  &kp BACKSPACE  &mo 2
+&lt 6 TAB     &kp Q  &kp W  &kp E  &kp R      &kp T                   &kp Y         &kp U          &kp I      &kp O    &kp P     &trans
+&lt 5 ESCAPE  &kp A  &kp S  &kp D  &kp F      &kp G                   &kp H         &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_GUI  &kp Z  &kp X  &kp C  &kp V      &kp B                   &kp N         &kp M          &kp COMMA  &kp DOT  &kp FSLH  &trans
+                            &mo 2  &kp LCTRL  &mt LEFT_SHIFT SPACE    &lt 3 RETURN  &kp BACKSPACE  &mo 3
+            >;
+        };
+
+        baseMiryoku {
+            display-name = "Amanu2";
+            bindings = <
+&lt 6 TAB     &kp Q           &kp W           &kp E        &kp R             &kp T                   &kp Y         &kp U             &kp I        &kp O           &kp P                   &trans
+&lt 5 ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                   &kp H         &mt LEFT_SHIFT J  &mt LCTRL K  &mt LEFT_ALT L  &mt LEFT_GUI SEMICOLON  &kp SQT
+&trans        &kp Z           &kp X           &kp C        &kp V             &kp B                   &kp N         &kp M             &kp COMMA    &kp DOT         &kp FSLH                &trans
+                                              &mo 2        &kp LCTRL         &mt LEFT_SHIFT SPACE    &lt 3 RETURN  &kp BACKSPACE     &mo 3
             >;
         };
 
@@ -95,8 +117,8 @@
 
             display-name = "Bilang";
             bindings = <
-&kp N1   &kp N2   &kp N3  &kp N4  &trans  &trans       &kp MINUS     &kp N7        &kp N8        &kp N9        &kp MINUS   &kp EQUAL
-&kp N5   &kp N6   &kp N7  &kp N8  &trans  &trans       &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS    &trans
+&kp N1   &kp N2   &kp N3  &kp N4  &trans  &trans       &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp EQUAL   &trans
+&kp N5   &kp N6   &kp N7  &kp N8  &trans  &trans       &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS    &trans
 &kp RET  &kp DOT  &kp N9  &kp N0  &trans  &trans       &kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &trans
                           &trans  &trans  &kp LSHFT    &kp NUMBER_0  &trans        &trans
             >;
@@ -114,7 +136,7 @@
 &kp TAB                  &kp EXCL  &kp AT  &kp HASH  &kp DLLR        &kp PRCNT      &kp CARET       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp MINUS  &kp EQUAL
 &mt LEFT_CONTROL ESCAPE  &trans    &trans  &trans    &trans          &trans         &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR     &kp BSLH   &kp GRAVE
 &kp LEFT_ALT             &trans    &trans  &trans    &trans          &trans         &kp PLUS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RBRC       &kp PIPE   &kp TILDE
-                                           &trans    &kp LEFT_SHIFT  &lt 4 SPACE    &trans          &trans                &trans
+                                           &trans    &kp LEFT_SHIFT  &lt 5 SPACE    &trans          &trans                &trans
             >;
         };
 
@@ -130,10 +152,10 @@
 
         navigation {
             bindings = <
-&kp LEFT_SHIFT           &trans     &kp LC(W)   &kp LG(E)          &kp F2                 &kp LC(LA(TAB))    &kp LC(Y)  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans     &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
-&mt LEFT_CONTROL ESCAPE  &kp LC(A)  &kp LGUI    &kp DELETE         &kp LC(LA(LS(SPACE)))  &kp LA(SPACE)      &kp LEFT   &kp DOWN                &kp UP                   &kp RIGHT  &kp LA(ESCAPE)     &kp LC(LA(LS(Z)))
-&kp LEFT_ALT             &kp LC(Z)  &kp LA(F4)  &kp LC(LS(LA(C)))  &mo 6                  &mo 7              &kp HOME   &kp PAGE_UP             &kp PAGE_DOWN            &kp END    &trans             &trans
-                                                &trans             &trans                 &trans             &mo 7      &kp BACKSPACE           &trans
+&trans  &trans     &kp LC(W)   &kp LG(E)          &kp F2                 &kp LC(LA(TAB))    &kp LC(Y)  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans     &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
+&trans  &kp LC(A)  &kp LGUI    &kp DELETE         &kp LC(LA(LS(SPACE)))  &kp LA(SPACE)      &kp LEFT   &kp DOWN                &kp UP                   &kp RIGHT  &kp LA(ESCAPE)     &kp LC(LA(LS(Z)))
+&trans  &kp LC(Z)  &kp LA(F4)  &kp LC(LS(LA(C)))  &mo 7                  &trans             &kp HOME   &kp PAGE_UP             &kp PAGE_DOWN            &kp END    &trans             &trans
+                               &trans             &trans                 &trans             &trans     &trans                  &trans
             >;
 
             label = "Libut";
