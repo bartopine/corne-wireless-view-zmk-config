@@ -25,54 +25,6 @@
             layers = <5>;
         };
 
-        komorebi_focus_left {
-            bindings = <&kp LA(LEFT_ARROW)>;
-            key-positions = <38 18>;
-            layers = <5>;
-        };
-
-        komorebi_focus_right {
-            bindings = <&kp LA(RIGHT)>;
-            key-positions = <21 38>;
-            layers = <5>;
-        };
-
-        komorebi_shift_left {
-            bindings = <&kp LC(LA(LEFT))>;
-            key-positions = <38 30>;
-            layers = <5>;
-        };
-
-        komorebi_shift_right {
-            bindings = <&kp LC(LA(RIGHT))>;
-            key-positions = <38 33>;
-            layers = <5>;
-        };
-
-        komorebi_focus_up {
-            bindings = <&kp LA(UP_ARROW)>;
-            key-positions = <38 20>;
-            layers = <5>;
-        };
-
-        komorebi_focus_down {
-            bindings = <&kp LA(DOWN)>;
-            key-positions = <38 19>;
-            layers = <5>;
-        };
-
-        komrebi_shift_up {
-            bindings = <&kp LC(LA(UP_ARROW))>;
-            key-positions = <38 32>;
-            layers = <5>;
-        };
-
-        komorebi_shift_down {
-            bindings = <&kp LC(LA(DOWN_ARROW))>;
-            key-positions = <38 31>;
-            layers = <5>;
-        };
-
         numbers {
             bindings = <&mo 2>;
             key-positions = <15 16>;
@@ -98,7 +50,7 @@
 
             display-name = "Amut";
             bindings = <
-&lt 6 TAB     &kp Q  &kp W  &kp E  &kp R      &kp T                   &kp Y         &kp U            &kp I      &kp O    &kp P     &kt LSHIFT
+&lt 6 TAB     &kp Q  &kp W  &kp E  &kp R      &kp T                   &kp Y         &kp U            &kp I      &kp O    &kp P     &sk LSHIFT
 &lt 5 ESCAPE  &kp A  &kp S  &kp D  &kp F      &kp G                   &kp H         &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_GUI  &kp Z  &kp X  &kp C  &kp V      &kp B                   &kp N         &kp M            &kp COMMA  &kp DOT  &kp FSLH  &trans
                             &mo 2  &kp LCTRL  &mt LEFT_SHIFT SPACE    &lt 3 RETURN  &lt 1 BACKSPACE  &mo 3
@@ -162,7 +114,7 @@
 &trans  &trans     &kp LC(W)   &kp LG(E)          &kp F2                 &kp LC(LA(TAB))    &kp LC(Y)  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &trans     &kp LC(LA(LS(P)))  &kp LC(LA(LS(M)))
 &trans  &kp LC(A)  &kp LGUI    &kp DELETE         &kp LC(LA(LS(SPACE)))  &kp LA(SPACE)      &kp LEFT   &kp DOWN                &kp UP                   &kp RIGHT  &kp LA(ESCAPE)     &kp LC(LA(LS(Z)))
 &trans  &kp LC(Z)  &kp LA(F4)  &kp LC(LS(LA(C)))  &trans                 &trans             &kp HOME   &kp PAGE_UP             &kp PAGE_DOWN            &kp END    &trans             &trans
-                               &trans             &trans                 &trans             &trans     &trans                  &trans
+                               &trans             &trans                 &mo 8              &trans     &trans                  &trans
             >;
 
             label = "Libut";
