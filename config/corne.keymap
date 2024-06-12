@@ -66,6 +66,12 @@
             key-positions = <15 16>;
             layers = <0>;
         };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -142,7 +148,7 @@
         navigation {
             bindings = <
 &trans  &trans  &trans  &trans  &trans        &trans    &kp LC(Y)  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LA(ESC)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &trans    &kp LEFT   &kp DOWN                &kp UP                   &kp RIGHT    &trans  &kp LC(LA(LS(Z)))
+&trans  &trans  &trans  &trans  &trans        &trans    &kp LEFT   &kp DOWN                &kp UP                   &kp RIGHT    &trans  &trans
 &trans  &trans  &trans  &trans  &trans        &trans    &kp HOME   &kp PAGE_UP             &kp PAGE_DOWN            &kp END      &trans  &trans
                         &trans  &kp LEFT_GUI  &mo 8     &trans     &trans                  &trans
             >;
@@ -152,10 +158,10 @@
 
         shortcuts {
             bindings = <
-&kp LC(LA(TAB))  &kp LA(F4)  &kp LC(W)  &kp LG(E)  &kp F2     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &kp LC(A)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans      &trans     &kp LC(Z)  &kp LC(Y)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans     &trans     &trans    &trans  &trans  &trans
+&kp LC(LA(TAB))  &kp LA(F4)         &kp LC(W)  &kp LG(E)   &kp F2     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &kp LC(A)          &kp LC(S)  &kp DELETE  &kp LC(F)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &kp LC(LA(LS(Z)))  &kp LC(X)  &kp LC(C)   &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                               &trans      &trans     &trans    &trans  &trans  &trans
             >;
 
             label = "Nyaman";
