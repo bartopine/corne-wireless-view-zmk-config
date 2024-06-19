@@ -159,8 +159,8 @@
         shortcuts {
             bindings = <
 &kp LC(LA(TAB))  &kp LA(F4)         &kp LC(W)  &kp LG(E)   &kp F2     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &kp LC(A)          &kp LC(S)  &kp DELETE  &kp LC(F)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &kp LC(LA(LS(Z)))  &kp LC(X)  &kp LC(C)   &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(Y)        &kp LC(A)          &kp LC(S)  &kp DELETE  &kp LC(F)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)        &kp LC(LA(LS(Z)))  &kp LC(X)  &kp LC(C)   &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                                &trans      &trans     &trans    &trans  &trans  &trans
             >;
 
