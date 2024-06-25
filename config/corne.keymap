@@ -72,6 +72,24 @@
             key-positions = <18 19>;
             layers = <0>;
         };
+
+        komorebiToLeft {
+            bindings = <&kp LC(LA(LEFT))>;
+            key-positions = <19 20>;
+            layers = <8>;
+        };
+
+        komorebiToRight {
+            bindings = <&kp LC(LA(RIGHT))>;
+            key-positions = <20 21>;
+            layers = <8>;
+        };
+
+        komorebiCycleWS {
+            bindings = <&kp LA(END)>;
+            key-positions = <21 19>;
+            layers = <8>;
+        };
     };
 
     macros {
