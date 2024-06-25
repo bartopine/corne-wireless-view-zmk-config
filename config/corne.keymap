@@ -186,10 +186,10 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans    &kp LG(LC(LS(LEFT)))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(LC(LS(RIGHT)))  &trans             &trans
-&trans  &trans  &trans  &trans  &trans        &trans    &kp LEFT              &kp DOWN                &kp UP                   &kp RIGHT              &MouseJump         &trans
-&trans  &trans  &trans  &trans  &trans        &trans    &kp HOME              &kp PAGE_UP             &kp PAGE_DOWN            &kp END                &kp LC(LA(LS(Z)))  &trans
-                        &trans  &kp LEFT_GUI  &mo 8     &trans                &trans                  &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &kp LG(LS(LEFT))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(LS(RIGHT))  &trans             &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &kp LEFT          &kp DOWN                &kp UP                   &kp RIGHT          &MouseJump         &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &kp HOME          &kp PAGE_UP             &kp PAGE_DOWN            &kp END            &kp LC(LA(LS(Z)))  &trans
+                        &trans  &kp LEFT_GUI  &mo 8     &trans            &trans                  &trans
             >;
 
             label = "Libut";
