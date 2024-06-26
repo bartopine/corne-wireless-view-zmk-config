@@ -25,15 +25,9 @@
             layers = <5>;
         };
 
-        left {
-            bindings = <&kp LEFT>;
+        space {
+            bindings = <&kp SPACE>;
             key-positions = <19 20>;
-            layers = <0>;
-        };
-
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <20 21>;
             layers = <0>;
         };
 
