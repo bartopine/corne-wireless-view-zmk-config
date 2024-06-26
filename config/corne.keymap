@@ -91,6 +91,13 @@
             label = "MOVEWINTOVIRD";
             wait-ms = <150>;
         };
+
+        secretPass: secretPass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp Y &kp G &kp LS(L) &kp E &kp E &kp P &kp AT &kp EXCL &kp EXCL>;
+            label = "SECRETPASS";
+        };
     };
 
     behaviors {
@@ -158,10 +165,10 @@
 
             display-name = "Simbulu";
             bindings = <
-&trans     &kp EXCL            &kp AT             &kp HASH           &kp DLLR               &kp PRCNT             &kp CARET       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp MINUS  &kp EQUAL
-&kp LC(Y)  &kp LC(LA(TAB))     &kp LC(LA(LS(C)))  &kp LC(LA(LS(P)))  &kp LC(LA(LS(SPACE)))  &kp LG(E)             &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR     &kp BSLH   &kp GRAVE
-&kp LC(Z)  &kp LC(LS(ESCAPE))  &kp LC(X)          &kp LC(C)          &kp LC(V)              &kp LC(LS(ESCAPE))    &kp PLUS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RBRC       &kp PIPE   &kp TILDE
-                                                  &trans             &trans                 &trans                &trans          &trans                &trans
+&secretPass  &kp EXCL            &kp AT             &kp HASH           &kp DLLR               &kp PRCNT             &kp CARET       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp MINUS  &kp EQUAL
+&kp LC(Y)    &kp LC(LA(TAB))     &kp LC(LA(LS(C)))  &kp LC(LA(LS(P)))  &kp LC(LA(LS(SPACE)))  &kp LG(E)             &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR     &kp BSLH   &kp GRAVE
+&kp LC(Z)    &kp LC(LS(ESCAPE))  &kp LC(X)          &kp LC(C)          &kp LC(V)              &kp LC(LS(ESCAPE))    &kp PLUS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RBRC       &kp PIPE   &kp TILDE
+                                                    &trans             &trans                 &trans                &trans          &trans                &trans
             >;
         };
 
