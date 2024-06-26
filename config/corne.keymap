@@ -43,16 +43,10 @@
             layers = <0 1>;
         };
 
-        LeftCurly {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <39 7>;
-            layers = <0 1>;
-        };
-
-        RightCurly {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <39 8>;
-            layers = <0 1>;
+        komoRight {
+            bindings = <&kp LC(LA(RIGHT))>;
+            key-positions = <20 21>;
+            layers = <8>;
         };
 
         navigation {
@@ -64,12 +58,6 @@
         komoMoveLeft {
             bindings = <&kp LC(LA(LEFT))>;
             key-positions = <19 20>;
-            layers = <8>;
-        };
-
-        komoMoveRight {
-            bindings = <&kp LC(LA(RIGHT))>;
-            key-positions = <20 21>;
             layers = <8>;
         };
     };
@@ -110,9 +98,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBTAPTOALT";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mt LEFT_ALT LEFT_ALT>;
+            bindings = <&mo 2>, <&kp LEFT_ALT>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
     };
 
