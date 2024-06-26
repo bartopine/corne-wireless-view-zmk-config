@@ -55,18 +55,6 @@
             layers = <0 1>;
         };
 
-        LeftSquare {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <39 31>;
-            layers = <0 1>;
-        };
-
-        RightSquare {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <39 32>;
-            layers = <0 1>;
-        };
-
         navigation {
             bindings = <&mo 5>;
             key-positions = <15 16>;
@@ -122,7 +110,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBTAPTOALT";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&kp LEFT_ALT>;
+            bindings = <&mo 2>, <&mt LEFT_ALT LEFT_ALT>;
 
             tapping-term-ms = <100>;
         };
