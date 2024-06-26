@@ -25,12 +25,6 @@
             layers = <5>;
         };
 
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <19 20>;
-            layers = <0>;
-        };
-
         LeftParenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <39 19>;
@@ -49,16 +43,22 @@
             layers = <8>;
         };
 
-        navigation {
-            bindings = <&mo 5>;
-            key-positions = <15 16>;
-            layers = <0>;
-        };
-
         komoMoveLeft {
             bindings = <&kp LC(LA(LEFT))>;
             key-positions = <19 20>;
             layers = <8>;
+        };
+
+        accentspace {
+            bindings = <&kp SPACE>;
+            key-positions = <39 22>;
+            layers = <0>;
+        };
+
+        navigation {
+            bindings = <&mo 5>;
+            key-positions = <15 16>;
+            layers = <0>;
         };
     };
 
@@ -100,7 +100,7 @@
             #binding-cells = <0>;
             bindings = <&mo 2>, <&kp LEFT_ALT>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
     };
 
