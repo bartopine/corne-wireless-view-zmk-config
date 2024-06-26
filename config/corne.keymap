@@ -90,30 +90,6 @@
             key-positions = <21 19>;
             layers = <8>;
         };
-
-        libutLeftArrow {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <19 20>;
-            layers = <0>;
-        };
-
-        libutRightArrow {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <20 21>;
-            layers = <0>;
-        };
-
-        showVirtDesk {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <18 19>;
-            layers = <5>;
-        };
-
-        moveToVirtDesk {
-            bindings = <&moveWinToVirD>;
-            key-positions = <19 21>;
-            layers = <5>;
-        };
     };
 
     macros {
@@ -143,6 +119,7 @@
                 <&kp RIGHT>;
 
             label = "MOVEWINTOVIRD";
+            wait-ms = <150>;
         };
     };
 
