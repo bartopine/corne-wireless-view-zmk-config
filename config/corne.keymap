@@ -91,14 +91,14 @@
             layers = <8>;
         };
 
-        leftArrow {
-            bindings = <&kp LEFT>;
+        libutLeftArrow {
+            bindings = <&kp LEFT_ARROW>;
             key-positions = <19 20>;
             layers = <0>;
         };
 
-        rightArrow {
-            bindings = <&kp RIGHT>;
+        libutRightArrow {
+            bindings = <&kp RIGHT_ARROW>;
             key-positions = <20 21>;
             layers = <0>;
         };
@@ -108,7 +108,8 @@
         MouseJump: MouseJump {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(J)))) &kp RIGHT>;
+            bindings = <&kp LG(LC(LA(LS(J))))>, <&macro_tap>, <&kp RIGHT>;
+
             label = "MOUSEJUMP";
         };
     };
@@ -186,7 +187,7 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans    &kp LG(LS(LEFT))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(LS(RIGHT))  &trans             &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &kp LG(LS(LEFT))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(LS(RIGHT))  &kp LG(TAB)        &kp LC(LS(F10))
 &trans  &trans  &trans  &trans  &trans        &trans    &kp LEFT          &kp DOWN                &kp UP                   &kp RIGHT          &MouseJump         &trans
 &trans  &trans  &trans  &trans  &trans        &trans    &kp HOME          &kp PAGE_UP             &kp PAGE_DOWN            &kp END            &kp LC(LA(LS(Z)))  &trans
                         &trans  &kp LEFT_GUI  &mo 8     &trans            &trans                  &trans
