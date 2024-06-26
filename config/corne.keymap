@@ -120,7 +120,11 @@
         MouseJump: MouseJump {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LA(LS(J))))>, <&macro_tap>, <&kp RIGHT>;
+            bindings =
+                <&macro_press>,
+                <&kp LG(LC(LA(LS(J))))>,
+                <&macro_press>,
+                <&kp RIGHT>;
 
             label = "MOUSEJUMP";
         };
@@ -129,9 +133,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
                 <&kp LS(F10)>,
                 <&macro_press>,
-                <&kp DOWN_ARROW>,
+                <&kp DOWN>,
                 <&macro_press>,
                 <&kp DOWN>,
                 <&macro_press>,
@@ -214,7 +219,7 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans    &kp LG(LS(LEFT))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(LS(RIGHT))  &trans             &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &kp LG(LS(LEFT))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(LS(RIGHT))  &kp LG(TAB)        &moveWinToVirD
 &trans  &trans  &trans  &trans  &trans        &trans    &kp LEFT          &kp DOWN                &kp UP                   &kp RIGHT          &MouseJump         &trans
 &trans  &trans  &trans  &trans  &trans        &trans    &kp HOME          &kp PAGE_UP             &kp PAGE_DOWN            &kp END            &kp LC(LA(LS(Z)))  &trans
                         &trans  &kp LEFT_GUI  &mo 8     &trans            &trans                  &trans
