@@ -102,6 +102,18 @@
             key-positions = <20 21>;
             layers = <0>;
         };
+
+        showVirtDesk {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <18 19>;
+            layers = <5>;
+        };
+
+        moveToVirtDesk {
+            bindings = <&moveWinToVirD>;
+            key-positions = <19 21>;
+            layers = <5>;
+        };
     };
 
     macros {
@@ -111,6 +123,21 @@
             bindings = <&kp LG(LC(LA(LS(J))))>, <&macro_tap>, <&kp RIGHT>;
 
             label = "MOUSEJUMP";
+        };
+
+        moveWinToVirD: moveWinToVirD {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LS(F10)>,
+                <&macro_press>,
+                <&kp DOWN_ARROW>,
+                <&macro_press>,
+                <&kp DOWN>,
+                <&macro_press>,
+                <&kp RIGHT>;
+
+            label = "MOVEWINTOVIRD";
         };
     };
 
@@ -187,7 +214,7 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans    &kp LG(LS(LEFT))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(LS(RIGHT))  &kp LG(TAB)        &kp LC(LS(F10))
+&trans  &trans  &trans  &trans  &trans        &trans    &kp LG(LS(LEFT))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(LS(RIGHT))  &trans             &trans
 &trans  &trans  &trans  &trans  &trans        &trans    &kp LEFT          &kp DOWN                &kp UP                   &kp RIGHT          &MouseJump         &trans
 &trans  &trans  &trans  &trans  &trans        &trans    &kp HOME          &kp PAGE_UP             &kp PAGE_DOWN            &kp END            &kp LC(LA(LS(Z)))  &trans
                         &trans  &kp LEFT_GUI  &mo 8     &trans            &trans                  &trans
