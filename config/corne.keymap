@@ -90,6 +90,18 @@
             key-positions = <21 19>;
             layers = <8>;
         };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -120,6 +132,21 @@
 
             label = "MOVEWINTOVIRD";
             wait-ms = <150>;
+        };
+
+        switchVirDesk: switchVirDesk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp TAB>,
+                <&macro_press>,
+                <&kp TAB>,
+                <&macro_press>,
+                <&kp TAB>;
+
+            label = "SWITCHVIRDESK";
+            wait-ms = <75>;
         };
     };
 
@@ -197,7 +224,7 @@
         navigation {
             bindings = <
 &trans  &trans  &trans  &trans  &trans        &trans    &kp LG(LS(LEFT))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(LS(RIGHT))  &kp LG(TAB)        &moveWinToVirD
-&trans  &trans  &trans  &trans  &trans        &trans    &kp LEFT          &kp DOWN                &kp UP                   &kp RIGHT          &MouseJump         &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &kp LEFT          &kp DOWN                &kp UP                   &kp RIGHT          &MouseJump         &switchVirDesk
 &trans  &trans  &trans  &trans  &trans        &trans    &kp HOME          &kp PAGE_UP             &kp PAGE_DOWN            &kp END            &kp LC(LA(LS(Z)))  &trans
                         &trans  &kp LEFT_GUI  &mo 8     &trans            &trans                  &trans
             >;
